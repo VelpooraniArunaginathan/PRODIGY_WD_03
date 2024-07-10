@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: #4CAF50;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #45a049;
+  color: #fff;
+}
+
+nav.scrolled {
+  background-color: #2E7D32;
+}
+
+section {
+  padding: 80px 20px;
+  height: 100vh;
+  text-align: center;
+  color: white;
+}
+
+#home {
+  background: url('https://images.unsplash.com/photo-1542281286-9e0a16bb7366') no-repeat center center/cover;
+}
+
+#about {
+  background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') no-repeat center center/cover;
+}
+
+#services {
+  background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f') no-repeat center center/cover;
+}
+
+#contact {
+  background: url('https://images.unsplash.com/photo-1522202221530-3499d75d57c5') no-repeat center center/cover;
+  color: #000;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: left;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      background-color: #4CAF50;
+  }
+
+  nav ul li {
+      margin: 0;
+  }
+
+  nav ul li a {
+      padding: 15px 20px;
+  }
+}
